@@ -17,6 +17,7 @@ Welcome to **Gotta Catch'Em All**, an exciting card matching game that takes you
   - [Installation](#installation)
   - [Usage](#usage)
   - [Rules](#rules)
+  - [Wireframe](#wireframe)
   - [Bugs](#bugs)
     - [Bug 1: Highscore Tracking Issue](#bug-1-highscore-tracking-issue)
     - [Bug 2: File Path Issue](#bug-2-file-path-issue)
@@ -79,6 +80,10 @@ These features not only make **Gotta Catch'Em All** an enjoyable game but also a
 ## Rules
 
 For detailed rules on how to play the game, click the "Rules" button in the game's menu. This will provide you with instructions on how to play and enjoy the game to the fullest.
+
+## Wireframe
+
+1. Index.Html
 
 ## Bugs
 
