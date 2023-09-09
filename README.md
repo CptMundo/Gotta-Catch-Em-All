@@ -100,11 +100,13 @@ These features not only make **Gotta Catch'Em All** an enjoyable game but also a
 
 1. **Index.html**
 
-![index-valdator]()
+![index-valdator](./assets/images/readme-images/html-validator.png)
 
 1. **Game.html**
    
 ![game-validator](./assets/images/readme-images/html-validator.png)
+
+*0 errors found in both codes*
 
 ## Rules
 

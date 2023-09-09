@@ -7,9 +7,8 @@ const closeButton = document.getElementById("close-button");
 const overlay = document.getElementById("overlay");
 
 document.getElementById("playGame").addEventListener("click", function () {
-    window.location = "game.html";
+    window.open("game.html", "_self");
 });
-
 
 button.addEventListener("click", function () {
     popup.style.display = "block";
