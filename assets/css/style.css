@@ -96,7 +96,8 @@ body {
 /*Box for the card game*/
 
 .wrapper {
-    padding: 75px;
+    padding: 40px 40px 105px 40px;
+    margin-top: 3%;
     background: #ffcb05;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
