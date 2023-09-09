@@ -2,6 +2,8 @@
 
 Welcome to **Gotta Catch'Em All**, an exciting card matching game that takes you into the Pokémon universe. Test your memory and match iconic Pokémon cards to become the ultimate Pokémon Master!
 
+![mockup](./assets/images/readme-images/mockup.png)
+
 ## Table of Contents
 - [Gotta Catch'Em All - Card Matching Game](#gotta-catchem-all---card-matching-game)
   - [Table of Contents](#table-of-contents)
