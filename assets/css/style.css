@@ -11,13 +11,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     background: #2a75bb;
 }
 
 .menu {
-    width: 700px;
-    height: 600px;
+    width: 50vw;
+    height: 40vh;
     background-color: #ffcb05;
     color: #2a75bb;
     border-radius: 25px;
@@ -32,21 +31,20 @@ body {
 
 /*Cover image*/
 .hero-image {
-    width: 700px;
+    width: 50vw;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 60px;
     align-items: center;
 }
 
 /*Intro text*/
 
 .intro {
-    padding-top: 35px;
+    padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 2px;
     text-align: justify;
     font-family: 'Pokemon Solid', sans-serif;
@@ -252,12 +250,32 @@ p {
     #popup {
         font-size: 15px;
         letter-spacing: 1px;
-
     }
 
 }
 
 @media screen and (max-width: 700px) {
+
+    .hero-image {
+        width: 50vw;
+        height: 17vh;
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        width: 60vw;
+        height: 70%;
+    }
+
+    .intro {
+        padding: 10px 12px 15px 12px;
+        font-size: 13px;
+    }
+
+    .menu-buttons {
+        margin-top: 35px;
+    }
 
     .wrapper {
         padding-bottom: 75px;
@@ -282,11 +300,28 @@ p {
 
     .details {
         height: calc(95% / 4 - 30px);
+        padding: 0 4px 0 0;
+
+    }
+
+    .details p {
+        padding-right: 9px;
+    }
+
+    .details button {
+        padding: 4px 2px;
     }
 
 }
 
 @media screen and (max-width: 530px) {
+
+    .hero-image {
+        width: 50vw;
+        height: 17vh;
+        display: block;
+
+    }
 
     .wrapper {
         padding-bottom: 75px;
@@ -306,21 +341,30 @@ p {
 
     .details {
         margin-top: 10px;
-        padding: 0 15px;
+        padding: 0 7px;
         height: calc(100% / 4 - 20px);
     }
 
     .details p {
-        height: 15px;
-        font-size: 17px;
-        padding-right: 13px;
+        height: 12px;
+        font-size: 13px;
+        padding-right: 3px;
     }
 
     .details button {
-        font-size: 13px;
+        font-size: 12px;
         padding: 5px 10px;
         border: none;
         color: #fff;
         background: #6563ff;
     }
+}
+
+.menu {
+    height: 50vh;
+}
+
+#popup {
+    font-size: 12px;
+    letter-spacing: 1px;
 }
