@@ -96,7 +96,7 @@ body {
 /*Box for the card game*/
 
 .wrapper {
-    padding: 40px 40px 105px 40px;
+    padding: 40px 40px 30px 40px;
     margin-top: 3%;
     background: #ffcb05;
     border-radius: 10px;
@@ -104,7 +104,7 @@ body {
 }
 
 button {
-    width: 120px;
+    width: 30%;
     height: 40px;
 }
 
@@ -202,8 +202,8 @@ p {
 
 .details {
     width: 100%;
-    margin-top: 5px;
-    padding: 0 20px;
+    margin-top: 30px;
+    padding: 15px 25px;
     border-radius: 7px;
     background: #fff;
     height: calc(50% / 4 - 30px);
@@ -284,8 +284,13 @@ p {
         margin-top: 35px;
     }
 
+
+    .details {
+        margin-top: 15px;
+    }
+
     .wrapper {
-        padding-bottom: 75px;
+        padding-bottom: 25px;
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 15px;
@@ -308,12 +313,13 @@ p {
 
     .details {
         height: calc(95% / 4 - 30px);
-        padding: 0 4px 0 0;
+        padding: 4px 4px 4px 0;
 
     }
 
     .details p {
         padding-right: 9px;
+        font-size: 18px;
     }
 
     .details button {
@@ -332,7 +338,7 @@ p {
     }
 
     .wrapper {
-        padding-bottom: 75px;
+        padding-bottom: 25px;
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 15px;
@@ -350,7 +356,7 @@ p {
 
     .details {
         margin-top: 10px;
-        padding: 0 7px;
+        padding: 5px;
         height: calc(100% / 4 - 20px);
     }
 
