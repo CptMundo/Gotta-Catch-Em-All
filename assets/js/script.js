@@ -1,12 +1,11 @@
-// Global Variables
-
+// Selecting all the card elements on the page
 const cards = document.querySelectorAll(".card"),
     timeTag = document.querySelector(".time b"),
     flipsTag = document.querySelector(".flips b"),
-    refreshBtn = document.querySelector(".details button");
+    refreshBtn = document.querySelector(".details button"),
+    highscoreTag = document.querySelector(".highscore span b");
 
-// Variables for timer /// 
-
+// Initial game variables
 let maxTime = 60;
 let timeLeft = maxTime;
 let flips = 0;
@@ -16,18 +15,35 @@ let isPlaying = false;
 let cardOne, cardTwo, timer;
 
 
-// Function to initialize the timer countdown
+// Get the previous highscore from local storage, or set it to Infinity if no previous highscore exists
+let highscore = localStorage.getItem("highscore") || Infinity;
 
+// Function to update the highscore and display it
+function updateHighscore() {
+    if (flips < highscore) {
+        highscore = flips;
+        localStorage.setItem("highscore", highscore);
+        highscoreTag.textContent = highscore; // Update the highscore display
+    }
+}
+
+// Function to end the game
+function endGame() {
+    clearInterval(timer);
+    disableDeck = true;
+    updateHighscore();
+}
+
+// Function to start the game timer and end's the game when time runs out
 function initTimer() {
     if (timeLeft <= 0) {
-        return clearInterval(timer);
+        return endGame();
     }
     timeLeft--;
     timeTag.innerText = timeLeft;
 }
 
-// Function to handle card flipping, check if there's still time left.
-
+// Function to handle card flipping
 function flipCard({ target: clickedCard }) {
     if (!isPlaying) {
         isPlaying = true;
@@ -48,22 +64,18 @@ function flipCard({ target: clickedCard }) {
     }
 }
 
-// Function to check if two flipped cards match and stops timer if all cards are matched
-
+// Function to check if two flipped cards match
 function matchCards(img1, img2) {
     if (img1 === img2) {
         matchedCard++;
         if (matchedCard == 8 && timeLeft > 0) {
-            return clearInterval(timer);
+            return endGame(); // End the game when all cards are matched
         }
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
         cardOne = cardTwo = "";
         return disableDeck = false;
     }
-
-    // Gives the shaking animation when non-matching cards are turned
-
     setTimeout(() => {
         cardOne.classList.add("shake");
         cardTwo.classList.add("shake");
@@ -77,8 +89,7 @@ function matchCards(img1, img2) {
     }, 1200);
 }
 
-// Function to shuffle and reset the game
-
+// Function to shuffle and initialize the cards
 function shuffleCard() {
     timeLeft = maxTime;
     flips = matchedCard = 0;
@@ -88,12 +99,8 @@ function shuffleCard() {
     flipsTag.innerText = flips;
     disableDeck = isPlaying = false;
 
-    // Shuffle the card order
-
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
     arr.sort(() => Math.random() > 0.5 ? 1 : -1);
-
-    // Initialize card elements with shuffled images
 
     cards.forEach((card, index) => {
         card.classList.remove("flip");
@@ -105,17 +112,16 @@ function shuffleCard() {
     });
 }
 
-
-// Initialize the game
-
+// Initial shuffle and card setup
 shuffleCard();
 
-// Refresh the game on button click
-
+// Event listener for the "Refresh" button
 refreshBtn.addEventListener("click", shuffleCard);
 
-// Add click event listeners to all cards
-
+// Event listener for clicking on cards
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
+
+// Set the initial highscore display
+highscoreTag.textContent = highscore;

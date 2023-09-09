@@ -1,3 +1,5 @@
+/*Structure style*/
+
 * {
     margin: 0;
     padding: 0;
@@ -21,13 +23,14 @@ body {
     border-radius: 25px;
 }
 
+/*Buttons position*/
 .menu-buttons {
     text-align: center;
     align-items: center;
     margin-top: 80px;
 }
 
-
+/*Cover image*/
 .hero-image {
     width: 700px;
     height: 300px;
@@ -36,6 +39,8 @@ body {
     padding-bottom: 60px;
     align-items: center;
 }
+
+/*Intro text*/
 
 .intro {
     padding-top: 35px;
@@ -49,6 +54,8 @@ body {
     text-shadow: 1px 0 0 rgb(0, 0, 0), 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 
 }
+
+/*Pop up style*/
 
 .popup {
     display: none;
@@ -76,6 +83,7 @@ body {
     margin-top: 10%;
 }
 
+/*Creates shaded background when pop up is active*/
 .overlay {
     display: none;
     position: fixed;
@@ -84,9 +92,10 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent black background */
     z-index: 1;
 }
+
+/*Box for the card game*/
 
 .wrapper {
     padding: 75px;
@@ -127,6 +136,8 @@ p {
     width: calc(100% / 4 - 10px);
 }
 
+
+/*Cards shake animations*/
 .card.shake {
     animation: shake 0.35s ease-in-out;
 }
@@ -172,6 +183,8 @@ p {
     max-width: 130px;
 }
 
+/*Card rotation animation*/
+
 .card .back-view {
     transform: rotateY(-180deg);
 }
@@ -198,6 +211,8 @@ p {
     justify-content: space-between;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
+
+/*Timer and Score style*/
 
 .details p {
     font-size: 18px;
@@ -230,6 +245,8 @@ p {
     background: #6563ff;
 }
 
+/*Media queries*/
+
 @media screen and (max-width: 950px) {
 
     #popup {
@@ -239,9 +256,6 @@ p {
     }
 
 }
-
-
-
 
 @media screen and (max-width: 700px) {
 
