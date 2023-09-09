@@ -5,10 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <title>Gotta Catch'Em All</title>
-</head>
+
 <body>
-    
+    <header>
+    <div>
+        <div>
+            <img class="hero-image" src="assets/images/hero-image.png" />
+        </div>
+    </header>
+        <div class="container">
+            <div class="menu">
+                <p class="intro">
+                    Welcome Gotta Match 'Em All!" In this
+                    exciting card matching game. Test your memory as you flip cards to
+                    uncover and match these iconic creatures. This game is a fun and
+                    challenging way to explore the Pokémon universe. So, grab your Poké
+                    Balls, sharpen your memory skills, and embark on a thrilling
+                    card-matching quest to become the ultimate Pokémon Master!
+                </p>
+                <div class="menu-buttons">
+
+                    <!--background shaded effect while popup is active-->
+                    <div id="overlay" class="overlay"></div>
+
+                    <button id="popup-button" class="btn-box">Rules</button>
+
+                    <!-- Popup button -->
+                    <div id="popup" class="popup">
+                        <p id="rules">Flip over two cards at a time to reveal their images.
+                            If the two cards match, congratulations! You've found a pair.
+                            If the cards don't match, flip them back face-down in the same position.
+                            Continue flipping over pairs of cards until you've successfully matched all of them. Good
+                            luck!</p>
+                    <!--Close popup button-->
+                        <button id="close-button">Close</button>
+                    </div>
+
+                    <a href="game.html">
+                        <button>Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script-index.js"></script>
 </body>
+
 </html>
