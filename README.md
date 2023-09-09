@@ -18,6 +18,8 @@ Welcome to **Gotta Catch'Em All**, an exciting card matching game that takes you
   - [Testing](#testing)
     - [Lighthouse Index.html](#lighthouse-indexhtml)
     - [Lighthouse Game.html](#lighthouse-gamehtml)
+    - [CSS Validator](#css-validator)
+    - [HTML Validator](#html-validator)
   - [Rules](#rules)
   - [Typography and Color](#typography-and-color)
     - [Typography](#typography)
@@ -91,6 +93,18 @@ These features not only make **Gotta Catch'Em All** an enjoyable game but also a
 ### Lighthouse Game.html
 ![lighthouse-game](./assets/images/readme-images/lighthouse-game.png)
 
+### CSS Validator
+![css-validator](./assets/images/readme-images/css-validator.png)
+
+### HTML Validator 
+
+1. **Index.html**
+
+![index-valdator]()
+
+1. **Game.html**
+   
+![game-validator](./assets/images/readme-images/html-validator.png)
 
 ## Rules
 
@@ -178,7 +192,7 @@ By achieving these goals, I aimed to create a fully functional and enjoyable car
 
 Special thanks to the following individuals and resources who contributed to the development of **Gotta Catch'Em All**:
 
-- [Victor Da Silva](https://www.linkedin.com/in/victor-da-silva-033399228/) - Game Developer
+- [Victor Da Silva](https://www.linkedin.com/in/victor-da-silva-033399228/) - Project Developer
 - [FreePng.com](https://freepngimg.com/games/pokemon) - Provided all the images used for the game
 - [CodingNepal](https://www.youtube.com/watch?v=DABkhfsBAWw) - I'm grateful for the tutorial that provided valuable insights and guidance, which I creatively applied to develop **Gotta Catch'Em All**
 - [BrainStorm](https://brainstation.io/learn/javascript/comment) - Used as a reference for JavaScript implementation
