@@ -15,6 +15,9 @@ Welcome to **Gotta Catch'Em All**, an exciting card matching game that takes you
   - [How to Play](#how-to-play)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Testing](#testing)
+    - [Lighthouse Index.html](#lighthouse-indexhtml)
+    - [Lighthouse Game.html](#lighthouse-gamehtml)
   - [Rules](#rules)
   - [Typography and Color](#typography-and-color)
     - [Typography](#typography)
@@ -78,6 +81,16 @@ These features not only make **Gotta Catch'Em All** an enjoyable game but also a
 1. Open the `index.html` file in a web browser to play the game.
 2. Click on cards to flip them and find matching pairs.
 3. Enjoy the game and try to achieve a highscore!
+
+## Testing
+
+### Lighthouse Index.html
+
+![lighthouse-index](./assets/images/readme-images/lighthouse-index.png)
+
+### Lighthouse Game.html
+![lighthouse-game](./assets/images/readme-images/lighthouse-game.png)
+
 
 ## Rules
 
