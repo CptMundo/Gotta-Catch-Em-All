@@ -6,10 +6,14 @@ const popup = document.getElementById("popup");
 const closeButton = document.getElementById("close-button");
 const overlay = document.getElementById("overlay");
 
+document.getElementById("playGame").addEventListener("click", function () {
+    window.location = "game.html";
+});
+
 
 button.addEventListener("click", function () {
     popup.style.display = "block";
-    overlay.style.display = "block"; 
+    overlay.style.display = "block";
 });
 
 closeButton.addEventListener("click", function () {
